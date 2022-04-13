@@ -18,7 +18,142 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>لوحة التحكم</title>
+    <title>مدرسة علمني | الرئيسية</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Start Header Section -->
+    <header class="header bg-light">
+      <div class="container">
+        <div class="header__content">
+          <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img
+                  class="brand__image"
+                  src="./images/logo.png"
+                  alt="مدرسة علمي"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >الرئيسية</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">عن المدرسة</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">تواصل معنا</a>
+                  </li>
+                </ul>
+                <div class="navbar-buttons">
+                  <a class="btn__primary" href="#">تسجيل الدخول</a>
+                  <a class="btn__primary" href="#">إنشاء حساب</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero Section -->
+    <section class="hero">
+      <div class="hero__content">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active custom-carousel-item">
+              <!-- <img src="./images/hero/1.jpg" class="d-block w-100" alt="hero" /> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>مشاركة أولياء الأمور والمجتمع</h5>
+                <p>
+                  للحفاظ على ملكية المجتمع للمدرسة، نقوم بتوظيف الموظفين من
+                  المجتمع المحيط
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item custom-carousel-item">
+              <!-- <img src="./images/hero/2.jpg" class="d-block w-100" alt="hero" /> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>مناهج شمولية</h5>
+                <p>
+                  مناهج شمولية متمركزة حول الطالب تجمع بين مهارات القرن الحادي
+                  والعشرين
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item custom-carousel-item">
+              <!-- <img src="./images/hero/3.jpg" class="d-block w-100" alt="hero" /> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>إدارة المدرسة والبيئة</h5>
+                <p>
+                  الحفاظ على ثقافة التمكين وتنفيذ عمليات الإدارة والإدارة
+                  الشاملة للمدرسة
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+  </body>
 </html>
