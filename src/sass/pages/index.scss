@@ -5,6 +5,7 @@ body {
 // Start Header Section
 .header {
   padding: 10px 0;
+  background-color: #f1f1f1;
 }
 
 .custom-navbar {
@@ -84,5 +85,49 @@ body {
   background-image: url("../images/hero/3.jpg");
 }
 
-
 // End Hero Section
+
+// Start About Section
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+.about__content {
+  max-width: 610px;
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 0;
+  font-family: cairo, 'sans-serif';
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.title__underline {
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  background-color: $color-blue;
+}
+
+.about__description {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  color: #666;
+}
+
+@media screen and (min-width:768px) {
+  .about {
+    padding: 70px 0;
+  }
+}
+
+
+// End About Section

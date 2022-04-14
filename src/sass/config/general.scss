@@ -21,3 +21,20 @@ a {
   color: $color-blue;
   background-color: #fff;
 }
+
+.btn__outline {
+  border: 2px solid $color-blue;
+  border-radius: 3px;
+  padding: 8px 40px;
+  color: $color-blue;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn__outline:hover {
+  color: #f1f1f1;
+  background-color: $color-blue;
+
+}
