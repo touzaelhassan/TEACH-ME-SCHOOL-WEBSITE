@@ -94,6 +94,12 @@ module.exports = {
       chunks: ['js/main.js'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/login.html',
+      filename: 'login.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),
