@@ -516,3 +516,26 @@
 }
 
 // End Footer Section
+
+// Start Signup Section
+.signup {
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.signup__form {
+  max-width: 600px;
+}
+
+@media screen and (min-width:768px) {
+  .signup {
+    padding: 210px 0;
+  }
+}
+
+// End Signup Section

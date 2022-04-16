@@ -88,6 +88,12 @@ module.exports = {
       chunks: ['js/main.js'],
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/signup.html',
+      filename: 'signup.html',
+      chunks: ['js/main.js'],
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
 
     new CssMinimizerPlugin(),

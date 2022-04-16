@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Cairo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>مدرسة علمني | الرئيسية</title>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img
+                  class="brand__image"
+                  src="./images/logo.png"
+                  alt="مدرسة علمي"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >الرئيسية</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">عن المدرسة</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">تواصل معنا</a>
+                  </li>
+                </ul>
+                <div class="navbar-buttons">
+                  <a class="btn__primary" href="#">تسجيل الدخول</a>
+                  <a class="btn__primary" href="#">إنشاء حساب</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Sign Up Section -->
+    <section class="signup">
+      <div class="container">
+        <form class="row g-3 needs-validation signup__form" novalidate>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label"> الاسم</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              required
+            />
+            <div class="invalid-feedback">المرجو إدخال الإسم</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label"
+              >تاريخ الميلاد</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="validationCustom02"
+              required
+            />
+            <div class="invalid-feedback">المرجو إدخال تاريخ الميلاد</div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label"
+              >البريد الإلكتروني</label
+            >
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+              />
+              <div class="invalid-feedback">المرجو إدخال البريد الإلكتروني</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label"
+              >كلمة المرور</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="validationCustom03"
+              required
+            />
+            <div class="invalid-feedback">المرجو إدخال كلمة المرور</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label"
+              >كلمة المرور</label
+            >
+            <input type="password" class="form-control" required />
+            <div class="invalid-feedback">المرجو إدخال كلمة المرور</div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn__primary" type="submit">إنشاء حساب</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Sign Up Section -->
+
+    <!-- Start Contact Us Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__content">
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26995.65171283751!2d-8.543145301079448!3d32.2457986426651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefcd3cdac94a5%3A0x2cfe67e059e518d!2sYoussoufia!5e0!3m2!1sen!2sma!4v1650122577887!5m2!1sen!2sma"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact__info">
+            <h2>تواصل معنا</h2>
+            <div class="info__item">
+              <i class="fa-solid fa-phone-flip"></i>
+              <span>212352423+</span>
+            </div>
+            <div class="info__item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>alimni@contact.com</span>
+            </div>
+            <div class="info__item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>شارع الجيش الملكي ، الدشيرة جهادية اكادير</span>
+            </div>
+            <div class="social__media">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <p>جميع الحقوق محفوظة</p>
+    </footer>
+    <!-- End Footer Section -->
+  </body>
+</html>
