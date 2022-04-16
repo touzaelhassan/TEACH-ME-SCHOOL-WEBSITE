@@ -1,7 +1,7 @@
 // Start Header Section
 .header {
   padding: 10px 0;
-  background-color: #f0fbfc;
+  background-color: #f1f1f1;
 }
 
 .custom-navbar {
@@ -519,22 +519,49 @@
 
 // Start Signup Section
 .signup {
-  padding: 50px 0;
+  padding: 123px 0;
 
   .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
+}
+
+.signup__title {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .signup__form {
   max-width: 600px;
 }
 
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    align-self: flex-end;
+    margin: 0;
+    font-size: 14px;
+
+    a {
+      color: $color-blue;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (min-width:768px) {
   .signup {
-    padding: 210px 0;
+    padding: 122px 0;
   }
 }
 
