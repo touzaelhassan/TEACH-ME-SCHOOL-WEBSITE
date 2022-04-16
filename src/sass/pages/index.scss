@@ -5,7 +5,7 @@ body {
 // Start Header Section
 .header {
   padding: 10px 0;
-  background-color: #f1f1f1;
+  background-color: #f0fbfc;
 }
 
 .custom-navbar {
@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 50px 0;
-  background-color: #f1f1f1;
+  background-color: $light-color;
 }
 
 .about__content {
@@ -123,11 +123,110 @@ body {
   color: #666;
 }
 
+.about__content {
+  .btn__outline {
+    background-color: #F9FAFB;
+
+    &:hover {
+      color: #f1f1f1;
+      background-color: $color-blue;
+    }
+  }
+}
+
+
 @media screen and (min-width:768px) {
   .about {
     padding: 70px 0;
   }
 }
 
-
 // End About Section
+
+// Start Activities Section
+.activities {
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.activities__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.activities__item {
+  border: 2px solid #eee;
+  padding: 25px 15px;
+  text-align: center;
+  background-color: #f0fbfc;
+}
+
+.activities__icon {
+  i {
+    color: $color-blue;
+    font-size: 50px;
+  }
+}
+
+.activities__title {
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.activities__description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+@media screen and (min-width:768px) {
+  .activities {
+    padding: 50px 0;
+  }
+
+  .activities__item {
+    padding: 0;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .activities {
+    padding: 70px 0;
+  }
+
+  .activities__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .activities__item {
+    display: flex;
+    gap: 25px;
+    width: calc(50% - 15px);
+    max-width: 500px;
+    padding: 40px 30px;
+    text-align: start;
+  }
+
+  .activities__title {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .activities__description {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+// End Activities Section

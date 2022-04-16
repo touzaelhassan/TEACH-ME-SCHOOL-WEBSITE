@@ -27,7 +27,7 @@ a {
   border-radius: 3px;
   padding: 8px 40px;
   color: $color-blue;
-  background-color: #f1f1f1;
+  background-color: #fff;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -38,3 +38,31 @@ a {
   background-color: $color-blue;
 
 }
+
+// Start Section Heading
+.section__heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.section__line {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: $color-blue;
+}
+
+@media screen and (min-width:768px) {
+
+  .section__heading {
+    margin-bottom: 50px;
+  }
+}
+
+// End Section Heading
