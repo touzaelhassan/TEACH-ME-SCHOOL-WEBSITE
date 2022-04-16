@@ -1,5 +1,5 @@
 body {
-  height: 2000px;
+  height: 5000px;
 }
 
 // Start Header Section
@@ -343,3 +343,88 @@ body {
 }
 
 // End Stundents Section
+
+// Start Backround Section
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50vh;
+  background-image: url("../images/bg-colors.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+
+  i {
+    color: #fff;
+    font-size: 50px;
+  }
+
+  p {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    max-width: 750px;
+  }
+}
+
+// End Background Section
+
+// Start Stars Section
+.stars {
+  padding: 50px 0;
+}
+
+.stars__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.star__item {
+  width: 100%;
+  border: 2px solid #eee;
+  padding: 5px;
+}
+
+.star__image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-position-x: 100%;
+}
+
+.star__item:nth-of-type(1) .star__image {
+  background-image: url("../images/star-1.jpg");
+}
+
+.star__item:nth-of-type(2) .star__image {
+  background-image: url("../images/star-2.jpg");
+}
+
+.star__info {
+  padding: 10px 0;
+  text-align: center;
+
+  button {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .stars {
+    padding: 70px 0;
+  }
+
+  .stars__content {
+    flex-direction: row;
+  }
+}
+
+// End Stars Section
