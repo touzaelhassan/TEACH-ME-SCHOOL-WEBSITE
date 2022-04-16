@@ -230,3 +230,116 @@ body {
 }
 
 // End Activities Section
+
+// Start Students Section
+.student {
+  border: 1px solid #eee;
+}
+
+.student__image {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-1.student:nth-of-type(1) .student__image {
+  background-image: url("../images/students/student-1.jpg");
+}
+
+.item-1.student:nth-of-type(2) .student__image {
+  background-image: url("../images/students/student-2.jpg");
+}
+
+.item-1.student:nth-of-type(3) .student__image {
+  background-image: url("../images/students/student-3.jpg");
+}
+
+.item-1.student:nth-of-type(4) .student__image {
+  background-image: url("../images/students/student-4.jpg");
+}
+
+.item-2.student:nth-of-type(1) .student__image {
+  background-image: url("../images/students/student-5.jpg");
+}
+
+.item-2.student:nth-of-type(2) .student__image {
+  background-image: url("../images/students/student-6.jpg");
+}
+
+.item-2.student:nth-of-type(3) .student__image {
+  background-image: url("../images/students/student-7.jpg");
+}
+
+.item-2.student:nth-of-type(4) .student__image {
+  background-image: url("../images/students/student-8.jpg");
+}
+
+.student__info {
+  position: relative;
+  padding: 25px 20px;
+  background-color: #f0fbfc;
+  text-align: center;
+}
+
+.student__icons {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  background-color: #f0fbfc;
+
+  i {
+    padding: 5px;
+    color: #fff;
+    background-color: $color-blue;
+  }
+}
+
+.student__name {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 600;
+}
+
+.student__age {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+  .students__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .student {
+    width: calc(33%);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .students {
+    padding-bottom: 70px;
+  }
+
+  .students__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .student {
+    width: 25%;
+  }
+}
+
+// End Stundents Section
