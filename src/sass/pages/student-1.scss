@@ -1,6 +1,78 @@
+// Start Student Information Section
+.student-info {
+  padding: 50px 0;
+}
+
+.student-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.student-info__image {
+  border: 3px solid rgb(220, 220, 220);
+  padding: 2px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.student-info__text {
+  background-color: #F3F3F3;
+
+  h3 {
+    padding: 20px;
+    color: rgba(238, 238, 238, 0.5);
+    background-color: $color-blue;
+  }
+
+  section {
+    padding: 20px;
+
+    div {
+      margin-bottom: 7px;
+
+      .title {
+        margin-left: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+
+    p {
+      color: #666;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .student-info {
+    padding: 70px 0;
+  }
+
+  .student-info__content {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .student-info__image {
+    width: 50%;
+  }
+
+  .student-info__text {
+    width: 50%;
+  }
+}
+
+// End Student Information Section
+
 // Start Advices Section
 .advices {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .advices__content {
@@ -26,7 +98,7 @@
 
 @media screen and (min-width:992px) {
   .advices {
-    padding: 70px;
+    padding: 70px 0;
   }
 
   .advices__content {

@@ -28,6 +28,12 @@
   }
 }
 
+.nav-link {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
 .nav-link.active {
   font-weight: 600;
 }
@@ -46,6 +52,13 @@
       }
     }
   }
+
+  .nav-link {
+    display: block;
+    padding: 0;
+    border-bottom: 0;
+  }
+
 
 }
 
