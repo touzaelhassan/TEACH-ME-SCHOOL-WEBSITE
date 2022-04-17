@@ -89,6 +89,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/student-1.html',
+      filename: 'student-1.html',
+      chunks: ['js/main.js'],
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/signup.html',
       filename: 'signup.html',
       chunks: ['js/main.js'],
