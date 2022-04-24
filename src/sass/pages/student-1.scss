@@ -111,3 +111,39 @@
 }
 
 // End Advices Section
+
+// Star Gallery Section
+
+.gallery {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.gallery__content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  width: calc(25% - 24px);
+}
+
+.gallery__item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #eee;
+}
+
+@media screen and (max-width:768px) {
+  .gallery {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .gallery__item {
+    width: calc(50% - 24px);
+  }
+}
+
+// End Gallery Section
