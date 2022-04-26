@@ -1,0 +1,176 @@
+// colors Variables
+$st2-primary-color : green;
+$st2-black-color : #444;
+$st2-gray-color : #F3F3F3;
+
+// Layout Variables
+$flex-gap-1 :10px;
+$flex-gap-2 :20px;
+$flex-gap-3 :30px;
+$flex-gap-4 :40px;
+
+$padding-y-3 : 30px 0;
+$padding-y-5 : 50px 0;
+$padding-y-7 : 50px 0;
+
+
+// Start Student Information Section
+.student-info {
+  padding: $padding-y-5;
+}
+
+.student-info__content {
+  @include flex-column-layout;
+  gap: $flex-gap-2;
+}
+
+.student-info__image {
+  border: 3px solid rgb(220, 220, 220);
+  padding: 2px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.student-info__text.two {
+  background-color: $st1-gray-color;
+
+  h3 {
+    padding: 20px;
+    color: $st1-black-color;
+    background-color: $st2-primary-color;
+  }
+
+  section {
+    padding: 20px;
+
+    div {
+      margin-bottom: 7px;
+
+      .title {
+        margin-left: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    }
+
+    p {
+      color: #666;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .student-info {
+    padding: $padding-y-7;
+  }
+
+  .student-info__content {
+    @include flex-row-layout;
+    gap: $flex-gap-4;
+  }
+
+  .student-info__image {
+    width: 50%;
+  }
+
+  .student-info__text {
+    width: 50%;
+  }
+}
+
+// End Student Information Section
+
+// Start Student Grade Section
+
+// End Student Grade Section
+.table.student-two {
+  th {
+    color: #fff;
+    background-color: $st2-primary-color;
+  }
+}
+
+.section__line.st-two {
+  background-color: $st2-primary-color;
+}
+
+// Start Advices Section
+.advices {
+  padding: $padding-y-5;
+}
+
+.advices__content {
+  @include flex-column-layout;
+}
+
+@media screen and (min-width:768px) {
+  .advices {
+    padding: $padding-y-7;
+  }
+
+  .advices__content {
+    @include flex-row-layout;
+    gap: $flex-gap-2;
+
+    .accordion {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width:992px) {
+  .advices {
+    padding: 70px 0;
+  }
+
+  .advices__content {
+    gap: 60px;
+
+    .accordion {
+      width: 50%;
+    }
+  }
+}
+
+// End Advices Section
+
+// Star Gallery Section
+
+.gallery {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.gallery__content {
+  @include flex-row-layout;
+  flex-wrap: wrap;
+  gap: $flex-gap-3;
+}
+
+.gallery__item {
+  width: calc(25% - 24px);
+}
+
+.gallery__item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #eee;
+}
+
+@media screen and (max-width:768px) {
+  .gallery {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .gallery__item {
+    width: calc(50% - 24px);
+  }
+}
+
+// End Gallery Section

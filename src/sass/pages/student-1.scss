@@ -1,12 +1,27 @@
+// colors Variables
+$st1-primary-color : #CFF4FC;
+$st1-black-color : #444;
+$st1-gray-color : #F3F3F3;
+
+// Layout Variables
+$flex-gap-1 :10px;
+$flex-gap-2 :20px;
+$flex-gap-3 :30px;
+$flex-gap-4 :40px;
+
+$padding-y-3 : 30px 0;
+$padding-y-5 : 50px 0;
+$padding-y-7 : 50px 0;
+
+
 // Start Student Information Section
 .student-info {
-  padding: 50px 0;
+  padding: $padding-y-5;
 }
 
 .student-info__content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include flex-column-layout;
+  gap: $flex-gap-2;
 }
 
 .student-info__image {
@@ -19,13 +34,13 @@
   }
 }
 
-.student-info__text {
-  background-color: #F3F3F3;
+.student-info__text.one {
+  background-color: $st1-gray-color;
 
   h3 {
     padding: 20px;
-    color: rgba(238, 238, 238, 0.5);
-    background-color: $color-blue;
+    color: $st1-black-color;
+    background-color: $st1-primary-color;
   }
 
   section {
@@ -51,12 +66,12 @@
 
 @media screen and (min-width:768px) {
   .student-info {
-    padding: 70px 0;
+    padding: $padding-y-7;
   }
 
   .student-info__content {
-    flex-direction: row;
-    gap: 40px;
+    @include flex-row-layout;
+    gap: $flex-gap-4;
   }
 
   .student-info__image {
@@ -70,25 +85,30 @@
 
 // End Student Information Section
 
+// Start Student Grade Section
+.section__line.st-one {
+  background-color: $st1-primary-color;
+}
+
+// End Student Grade Section
+
 // Start Advices Section
 .advices {
-  padding: 50px 0;
+  padding: $padding-y-5;
 }
 
 .advices__content {
-  display: flex;
-  flex-direction: column;
+  @include flex-column-layout;
 }
 
 @media screen and (min-width:768px) {
   .advices {
-    padding: 70px;
+    padding: $padding-y-7;
   }
 
   .advices__content {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    @include flex-row-layout;
+    gap: $flex-gap-2;
 
     .accordion {
       width: 50%;
@@ -120,9 +140,9 @@
 }
 
 .gallery__content {
-  display: flex;
-  gap: 30px;
+  @include flex-row-layout;
   flex-wrap: wrap;
+  gap: $flex-gap-3;
 }
 
 .gallery__item {
